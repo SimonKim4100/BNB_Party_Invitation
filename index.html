@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>BNB_invitation</title>
+        <link rel="stylesheet" href="style.css">
+        <meta property="og:title" content="2024 파티 초대">
+        <meta property="og:description" content="8월 13일 은혜채플로 당신을 초대합니다 ✨">
+    </head>
+
+    <body>
+        <div class="imageBox" id="imageBox">
+            <img class="falling-image" src="하트.png" id="heart1">
+            <img class="falling-image" src="하트.png" id="heart2">
+            <img class="falling-image" src="하트.png" id="heart3">
+            <img class="falling-image" src="하트.png" id="heart4">
+            <img class="falling-image" src="하트.png" id="heart5">
+            <img class="falling-image" src="하트.png" id="heart6">
+            <img class="falling-image" src="하트.png" id="heart7">
+            <img class="falling-image" src="하트.png" id="heart8">
+            <img class="falling-image" src="하트.png" id="heart9">
+            <img class="falling-image" src="하트.png" id="heart10">
+            <img class="falling-image" src="하트.png" id="heart11">
+            <img class="falling-image" src="하트.png" id="heart12">
+            <img class="falling-image" src="하트.png" id="heart13">
+            <img class="falling-image" src="하트.png" id="heart14">
+            <img class="falling-image" src="하트.png" id="heart15">
+            <img class="falling-image" src="하트.png" id="heart16">
+            <img class="falling-image" src="하트.png" id="heart17">
+            <img class="falling-image" src="하트.png" id="heart18">
+            <img class="falling-image" src="하트.png" id="heart19">
+            <img class="falling-image" src="하트.png" id="heart20">
+            <img class="falling-image" src="하트.png" id="heart21">
+            <img class="falling-image" src="하트.png" id="heart22">
+            <img class="falling-image" src="하트.png" id="heart23">
+            <img class="falling-image" src="하트.png" id="heart24">
+            <img class="man" src="사람_비어있음.png" style="width:100%;height:100%" id="man">
+            <div class="text" id="text">
+                눌러봐요!
+            </div>
+        </div>
+    </body>
+    
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        for (let i = 1; i <= 24; i++){
+            let heart = document.getElementById('heart'+i)
+            heart.classList.add('transform2')
+        }
+    })
+    const transition = document.getElementById("imageBox")
+
+    transition.addEventListener("click",() => {
+        trans();
+    })
+
+    function trans() {
+        document.getElementById("text").classList.add('transform2')
+        const hearts = document.querySelectorAll('.falling-image');
+        hearts.forEach((img, index) => {
+            img.classList.add('falling_image_add')
+            img.style.animationDelay = `${index * 0.05}s`;
+        });
+    }
+
+</script>
