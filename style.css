@@ -3,12 +3,14 @@ body{
     padding: 0;
     height: 100vh;
     width: auto;
+    max-width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position:center center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .imageBox{
@@ -19,6 +21,7 @@ body{
     align-content: center;
     width: 100vw;
     height: auto;
+    overflow: hidden;
 }
 
 @media (min-aspect-ratio: 503/744){
@@ -52,7 +55,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    animation-name: appear;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
 }
+
+
 
 .man{
     display: flex;
