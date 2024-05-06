@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: auto;
     background-size: contain;
     background-repeat: no-repeat;
     background-position:center center;
@@ -16,14 +17,24 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: auto;
-    height: 100vh;
+    width: 100vw;
+    height: auto;
+}
+
+@media (min-aspect-ratio: 503/744){
+    .imageBox{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: auto;
+        height: 100vh;
+    }
 }
 
 .transform {
-    position: absolute;
-    transition: 1s ease;
-    opacity: 0;
+    display: none;
 }
 
 .transform2{
@@ -36,247 +47,242 @@ body{
 
 .transform4 {
     display: flex;
+    height: auto;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    opacity: 0;
-}
-
-.transform5{
-    display: none;
 }
 
 .man{
-    display: block;
-    z-index: 21;
+    display: flex;
+    z-index: 20;
 }
 
 .text{
     position: absolute;
-    padding-top: 50vh;
-    padding-left: 20vh;
-    width: auto;
+    width: 80%;
     height: auto;
+    padding-left: 10%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    font-size: 80px; /* This size can be adjusted as needed */
-    text-align: center;
-    color: rgb(0, 0, 0); /* Ensuring text is black for visibility on white background */
+    align-content: center;
+    z-index: 21;
 }
 
 #heart1 {
     position: absolute;
-    padding-top: 65vh;
-    padding-left: 0vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 100%;
+    padding-left: 0%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart2 {
     position: absolute;
-    padding-top: 75vh;
-    padding-left: 9vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 110%;
+    padding-left: 13%;
+    width: auto;
+    height: 18%;
     z-index: 2;
 }
 
 #heart3 {
     position: absolute;
-    padding-top: 67vh;
-    padding-left: 25vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 100%;
+    padding-left: 40%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart4 {
     position: absolute;
-    padding-top: 73vh;
-    padding-left: 38vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 105%;
+    padding-left: 55%;
+    width: auto;
+    height: 18%;
     z-index: 2;
 }
 
 #heart5 {
     position: absolute;
-    padding-top: 70vh;
-    padding-left: 46vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 112%;
+    padding-left: 65%;
+    width: auto;
+    height: 18%;
     z-index: 3;
 }
 #heart6 {
     position: absolute;
-    padding-top: 40vh;
-    padding-left: 0vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 69%;
+    padding-left: 0%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart7 {
     position: absolute;
-    padding-top: 47vh;
-    padding-left: 14vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 67%;
+    padding-left: 20%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart8 {
     position: absolute;
-    padding-top: 42vh;
-    padding-left: 25vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 64%;
+    padding-left: 40%;
+    width: auto;
+    height: 18%;
     z-index: 2;
 }
 
 #heart9 {
     position: absolute;
-    padding-top: 46vh;
-    padding-left: 41vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 72%;
+    padding-left: 65%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart10 {
     position: absolute;
-    padding-top: 25vh;
-    padding-left: 10vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 35%;
+    padding-left: 15%;
+    width: auto;
+    height: 18%;
     z-index: 3;
 }
 
 #heart11 {
     position: absolute;
-    padding-top: 15vh;
-    padding-left: 25vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 30%;
+    padding-left: 36%;
+    width: auto;
+    height: 18%;
     z-index: 2;
 }
 
 #heart12 {
     position: absolute;
-    padding-bottom: 0vh;
-    padding-left:6vh;
-    width: 20vh;
-    height: 20vh;
+    padding-top: 0%;
+    padding-left: 10%;
+    width: auto;
+    height: 18%;
     z-index: 2;
 }
 
 #heart13 {
     position: absolute;
-    padding-bottom: 5vh;
-    padding-left: 18vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 5%;
+    padding-left: 32%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart14 {
     position: absolute;
-    padding-bottom: 18vh;
-    padding-left: 30vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 40%;
+    padding-left: 53%;
+    width: auto;
+    height: 18%;
     z-index: 3;
 }
 
 #heart15 {
     position: absolute;
-    padding-bottom: 21vh;
-    padding-left: 4vh;
-    width: 20vh;
-    height: 20vh;
-    z-index: 2;
+    padding-bottom: 39%;
+    padding-left: 8%;
+    width: auto;
+    height: 18%;
+    z-index: 3;
 }
 
 #heart16 {
     position: absolute;
-    padding-bottom: 27vh;
-    padding-left: 17vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 35%;
+    padding-left: 28%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart17 {
     position: absolute;
-    padding-bottom: 44vh;
-    padding-left: 8vh;
-    width: 20vh;
-    height: 20vh;
-    z-index: 3;
+    padding-bottom: 70%;
+    padding-left: 13%;
+    width: auto;
+    height: 18%;
+    z-index: 2;
 }
 
 #heart18 {
     position: absolute;
-    padding-bottom: 55vh;
-    padding-left: 15vh;
-    width: 20vh;
-    height: 20vh;
-    z-index: 2;
+    padding-bottom: 65%;
+    padding-left: 30%;
+    width: auto;
+    height: 18%;
+    z-index: 3;
 }
 
 #heart19 {
     position: absolute;
-    padding-bottom: 40vh;
-    padding-left: 40vh;
-    width: 20vh;
-    height: 20vh;
-    z-index: 1;
+    padding-bottom: 68%;
+    padding-left: 52%;
+    width: auto;
+    height: 18%;
+    z-index: 2;
 }
 
 #heart20 {
     position: absolute;
-    padding-bottom: 46vh;
-    padding-left: 30vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 100%;
+    padding-left: 19%;
+    width: auto;
+    height: 18%;
     z-index: 3;
 }
 
 #heart21 {
     position: absolute;
-    padding-bottom: 65vh;
-    padding-left: 20vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 95%;
+    padding-left: 30%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart22 {
     position: absolute;
-    padding-bottom: 70vh;
-    padding-left: 30vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 107%;
+    padding-left: 53%;
+    width: auto;
+    height: 18%;
     z-index: 2;
 }
 
 #heart23 {
     position: absolute;
-    padding-bottom: 61vh;
-    padding-left: 44vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 100%;
+    padding-left: 68%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
 #heart24 {
     position: absolute;
-    padding-bottom: 78vh;
-    padding-left: 44vh;
-    width: 20vh;
-    height: 20vh;
+    padding-bottom: 110%;
+    padding-left: 65%;
+    width: auto;
+    height: 18%;
     z-index: 1;
 }
 
@@ -286,6 +292,21 @@ body{
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-duration: 0.5s;
+}
+
+.inv{
+    display: none;
+}
+
+@media (min-aspect-ratio: 842/1191){
+    .transform4 {
+        display: flex;
+        height: 100vh;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 @keyframes fall {
@@ -299,9 +320,20 @@ body{
     }
 }
 
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-
-
-
-
-
+@keyframes disappear {
+    from{
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

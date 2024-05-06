@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-height, initial-scale=1"/>
         <title>BNB_invitation</title>
         <link rel="stylesheet" href="style.css">
         <meta property="og:title" content="2024 파티 초대">
@@ -10,6 +10,7 @@
 
     <body>
         <div class="imageBox" id="imageBox">
+            <img class="text" src="text.png" id="text">
             <img class="falling-image" src="하트.png" id="heart1">
             <img class="falling-image" src="하트.png" id="heart2">
             <img class="falling-image" src="하트.png" id="heart3">
@@ -35,9 +36,9 @@
             <img class="falling-image" src="하트.png" id="heart23">
             <img class="falling-image" src="하트.png" id="heart24">
             <img class="man" src="사람_비어있음.png" style="width:100%;height:100%" id="man">
-            <div class="text" id="text">
-                눌러봐요!
-            </div>
+        </div>
+        <div>
+            <img class="inv" src="초청장.png" id="inv">
         </div>
     </body>
     
@@ -63,6 +64,10 @@
             img.classList.add('falling_image_add')
             img.style.animationDelay = `${index * 0.05}s`;
         });
+        setTimeout(() => {
+            document.getElementById("imageBox").classList.add('transform')
+            document.getElementById("inv").classList = ('transform4')
+        }, 2000);
     }
 
 </script>
